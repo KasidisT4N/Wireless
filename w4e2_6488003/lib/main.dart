@@ -1,27 +1,26 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const FigmaToCodeApp());
+  runApp(const w4e2());
 }
 
-// Thank you: https://www.figma.com/community/plugin/842128343887142055/
-class FigmaToCodeApp extends StatelessWidget {
-  const FigmaToCodeApp({super.key});
+class w4e2 extends StatelessWidget {
+  const w4e2({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData.dark().copyWith(
-        scaffoldBackgroundColor: const Color.fromARGB(255, 18, 32, 47),
+        scaffoldBackgroundColor: Color.fromARGB(255, 0, 0, 0),
       ),
       home: Scaffold(
-        body: ListView(children: [
-          Confirm(),
-        ]),
+        body: ListView(children: [Confirm(),
+        ],),
       ),
-    );
+      );
   }
 }
+
 
 class Confirm extends StatelessWidget {
   @override
@@ -29,24 +28,23 @@ class Confirm extends StatelessWidget {
     return Column(
       children: [
         Container(
-          width: 393,
-          height: 852,
-          clipBehavior: Clip.antiAlias,
+          width: 400,
+          height: 880,
+          margin: EdgeInsets.only(top: 40.0),
           decoration: BoxDecoration(color: Colors.white),
           child: Stack(
             children: [
               Positioned(
-                left: 28,
-                top: 102,
+                left: 25,
+                top: 70,
                 child: Text(
-                  'Papaya Salad(Best Offer)',
+                  'Papaya Salad (Best Offer)',
                   style: TextStyle(
                     color: Colors.black,
-                    fontSize: 26,
-                    fontFamily: 'Poppins',
-                    fontWeight: FontWeight.w600,
-                    height: 0.05,
-                    letterSpacing: -0.57,
+                    fontSize: 30,
+                    fontFamily: 'Times New Roman',
+                    fontWeight: FontWeight.w800,
+                    letterSpacing: -0.8,
                   ),
                 ),
               ),
@@ -57,14 +55,13 @@ class Confirm extends StatelessWidget {
                   width: 167,
                   height: 26,
                   child: Text(
-                    'Papaya Salad\n',
+                    'Papaya Salad',
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 20,
-                      fontFamily: 'Poppins',
-                      fontWeight: FontWeight.w500,
-                      height: 0.07,
-                      letterSpacing: -0.44,
+                      fontFamily: 'Times New Roman',
+                      fontWeight: FontWeight.w700,
+                      letterSpacing: -0.8,
                     ),
                   ),
                 ),
@@ -72,12 +69,11 @@ class Confirm extends StatelessWidget {
               Positioned(
                 left: 220,
                 top: 140,
-
                   child: Image(
                 image: AssetImage('images/som.JPG'),
-                width: 120.0, // Set the width of the image
-                height: 120.0, // Set the height of the image
-                fit: BoxFit.cover, // Adjust the BoxFit property as needed
+                width: 150.0, 
+                height: 120.0, 
+                fit: BoxFit.cover, 
               )
               ),
               Positioned(
@@ -96,7 +92,7 @@ class Confirm extends StatelessWidget {
               ),
               Positioned(
                 left: 114,
-                top: 285,
+                top: 267,
                 child: SizedBox(
                   width: 18,
                   height: 31,
@@ -105,10 +101,25 @@ class Confirm extends StatelessWidget {
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 25.17,
-                      fontFamily: 'Poppins',
+                      fontFamily: 'Times New Roman',
                       fontWeight: FontWeight.w500,
-                      height: 0.06,
-                      letterSpacing: -0.55,
+                    ),
+                  ),
+                ),
+              ),
+               Positioned(
+                left: 46,
+                top: 256,
+                child: SizedBox(
+                  width: 18,
+                  height: 31,
+                  child: Text(
+                    '-',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 40,
+                      fontFamily: 'Times New Roman',
+                      fontWeight: FontWeight.w500,
                     ),
                   ),
                 ),
@@ -126,22 +137,20 @@ class Confirm extends StatelessWidget {
                 ),
               ),
               Positioned(
-                left: 83,
-                top: 285,
+                left: 81,
+                top: 272,
                 child: Text(
                   '1',
                   style: TextStyle(
                     color: Colors.black,
-                    fontSize: 19.74,
-                    fontFamily: 'Poppins',
+                    fontSize: 19,
+                    fontFamily: 'Times New Roman',
                     fontWeight: FontWeight.w500,
-                    height: 0.08,
-                    letterSpacing: -0.43,
                   ),
                 ),
               ),
               Positioned(
-                left: 305,
+                left: 270,
                 top: 285,
                 child: SizedBox(
                   width: 60,
@@ -151,10 +160,9 @@ class Confirm extends StatelessWidget {
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 18,
-                      fontFamily: 'Poppins',
+                      fontFamily: 'Times New Roman',
                       fontWeight: FontWeight.w400,
-                      height: 0.08,
-                      letterSpacing: -0.40,
+                      letterSpacing: -0.8,
                     ),
                   ),
                 ),
@@ -173,9 +181,7 @@ class Confirm extends StatelessWidget {
                     shadows: [
                       BoxShadow(
                         color: Color(0x1C000000),
-                        blurRadius: 20,
-                        offset: Offset(0, 4),
-                        spreadRadius: 0,
+                        blurRadius: 15,
                       )
                     ],
                   ),
@@ -183,52 +189,50 @@ class Confirm extends StatelessWidget {
               ),
               Positioned(
                 left: 42,
-                top: 410,
+                top: 400,
                 child: Text(
                   '2 pc. Grill chicken',
                   style: TextStyle(
                     color: Colors.black,
                     fontSize: 18,
-                    fontFamily: 'Poppins',
+                    fontFamily: 'Times New Roman',
                     fontWeight: FontWeight.w500,
-                    height: 0.08,
-                    letterSpacing: -0.40,
+                    letterSpacing: -0.8,
                   ),
                 ),
               ),
               Positioned(
                 left: 42,
-                top: 440,
+                top: 425,
                 child: SizedBox(
                   width: 289,
                   child: Text(
                     'Add 1 for free with \$5.67 purchase',
                     style: TextStyle(
                       color: Color(0xFFFCD36A),
-                      fontSize: 16,
-                      fontFamily: 'Poppins',
+                      fontSize: 18,
+                      fontFamily: 'Times New Roman',
                       fontWeight: FontWeight.w400,
-                      height: 0.09,
-                      letterSpacing: -0.35,
+                      letterSpacing: -0.8,
                     ),
                   ),
                 ),
               ),
               Positioned(
                 left: 320,
-                top: 402,
+                top: 410,
                 child: Container(
                   width: 29,
                   height: 29,
                   decoration: ShapeDecoration(
-                    color: Color(0xFFFBDE3F),
+                    color: Color.fromARGB(255, 250, 221, 58),
                     shape: OvalBorder(),
                   ),
                 ),
               ),
               Positioned(
                 left: 328,
-                top: 416,
+                top: 407,
                 child: SizedBox(
                   width: 18,
                   height: 31,
@@ -236,11 +240,9 @@ class Confirm extends StatelessWidget {
                     '+',
                     style: TextStyle(
                       color: Colors.black,
-                      fontSize: 25.17,
-                      fontFamily: 'Poppins',
+                      fontSize: 25,
+                      fontFamily: 'Times New Roman',
                       fontWeight: FontWeight.w500,
-                      height: 0.06,
-                      letterSpacing: -0.55,
                     ),
                   ),
                 ),
@@ -253,16 +255,15 @@ class Confirm extends StatelessWidget {
                   style: TextStyle(
                     color: Colors.black,
                     fontSize: 20,
-                    fontFamily: 'Poppins',
+                    fontFamily: 'Times New Roman',
                     fontWeight: FontWeight.w500,
-                    height: 0.07,
-                    letterSpacing: -0.44,
+                    letterSpacing: -0.8,
                   ),
                 ),
               ),
               Positioned(
                 left: 297,
-                top: 498,
+                top: 501,
                 child: SizedBox(
                   width: 68,
                   height: 27,
@@ -271,10 +272,9 @@ class Confirm extends StatelessWidget {
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 20,
-                      fontFamily: 'Poppins',
+                      fontFamily: 'Times New Roman',
                       fontWeight: FontWeight.w500,
-                      height: 0.07,
-                      letterSpacing: -0.44,
+                      letterSpacing: -0.8,
                     ),
                   ),
                 ),
@@ -294,19 +294,18 @@ class Confirm extends StatelessWidget {
                 ),
               ),
               Positioned(
-                left: 160,
-                top: 720,
+                left: 169,
+                top: 710,
                 child: SizedBox(
                   width: 129,
                   child: Text(
                     'Go back',
                     style: TextStyle(
                       color: Colors.black,
-                      fontSize: 17,
-                      fontFamily: 'Poppins',
+                      fontSize: 18,
+                      fontFamily: 'Times New Roman',
                       fontWeight: FontWeight.w600,
-                      height: 0.09,
-                      letterSpacing: -0.37,
+                      letterSpacing: -0.8,
                     ),
                   ),
                 ),
@@ -334,19 +333,18 @@ class Confirm extends StatelessWidget {
                         ),
                       ),
                       Positioned(
-                        left: 134,
-                        top:25,
+                        left: 141,
+                        top:18,
                         child: SizedBox(
                           width: 86,
                           child: Text(
                             'Confirm',
                             style: TextStyle(
                               color: Colors.black,
-                              fontSize: 17,
-                              fontFamily: 'Poppins',
+                              fontSize: 18,
+                              fontFamily: 'Times New Roman',
                               fontWeight: FontWeight.w600,
-                              height: 0.09,
-                              letterSpacing: -0.37,
+                              letterSpacing: -0.8,
                             ),
                           ),
                         ),
