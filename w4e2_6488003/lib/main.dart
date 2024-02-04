@@ -74,7 +74,7 @@ class Confirm extends StatelessWidget {
                 top: 140,
 
                   child: Image(
-                image: AssetImage('images/som.jpg'),
+                image: AssetImage('images/som.JPG'),
                 width: 120.0, // Set the width of the image
                 height: 120.0, // Set the height of the image
                 fit: BoxFit.cover, // Adjust the BoxFit property as needed
