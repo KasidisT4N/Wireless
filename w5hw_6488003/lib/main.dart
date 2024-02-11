@@ -22,8 +22,11 @@ class w4e2 extends StatelessWidget {
 }
 
 class Confirm extends StatelessWidget {
+  double price = 20.99;
+
   @override
   Widget build(BuildContext context) {
+    double price = 20.99; 
     return Column(
       children: [
         Container(
@@ -149,6 +152,7 @@ class Confirm extends StatelessWidget {
                 ),
               ),
               Positioned(
+                
                 left: 270,
                 top: 285,
                 child: SizedBox(
@@ -267,7 +271,7 @@ class Confirm extends StatelessWidget {
                   width: 68,
                   height: 27,
                   child: Text(
-                    '\$20.99',
+                    '\$$price',
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 20,
@@ -338,7 +342,7 @@ class Confirm extends StatelessWidget {
                           onTap: () {
                              Navigator.push(
                              context,
-                              MaterialPageRoute(builder: (context) => Payment()),
+                              MaterialPageRoute(builder: (context) => Payment( price : price)),
                               );
                                },
                              child: SizedBox(
@@ -370,6 +374,8 @@ class Confirm extends StatelessWidget {
 
 class Payment extends StatelessWidget {
   @override
+  double price ;
+  Payment({required this.price});
   Widget build(BuildContext context) {
     return Container(
       color: Colors.black, 
@@ -445,6 +451,20 @@ class Payment extends StatelessWidget {
                           ),
                         ),
                       ],
+                    ),
+                  ),
+                ),
+                Positioned(
+                  left: 40,
+                  top: 360,
+                  child: Text(
+                    'Total Price: \$${price.toStringAsFixed(2)}',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 20,
+                      fontFamily: 'Times New Roman',
+                      fontWeight: FontWeight.w500,
+                      letterSpacing: -0.8,
                     ),
                   ),
                 ),
